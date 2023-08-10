@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+  Title Unauth Logs
+style.
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #999, #800000);
+        color: #fff;
+        padding: 20px;
+      }
+      h1 {
+        color: #800000;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        background-color: #444;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      strong {
+        font-weight: bold;
+      }
+      span {
+        display: block;
+        margin-bottom: 5px;
+      }
+body
+    h1 <collection_name_here> Logs
+
+    ul
+      each document in documents
+        li
+          strong User: #{document.user}
+          br
+          span Email: #{document.email}
+          br
+          span Attempted Command: #{document.attempted_command}
+          br
+          span Date: #{document.date}
