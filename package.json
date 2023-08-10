@@ -1,0 +1,35 @@
+{
+  "name": "1",
+  "version": "7.0.0",
+  "description": "Webex bot to handle call center issues",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --use_strict index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitroxit/callcenterbot.git"
+  },
+  "keywords": [
+    "Cisco",
+    "Webex",
+    "webex-bot-framework"
+  ],
+  "author": "Nathaniell Scholze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nitroxit/callcenterbot/issues"
+  },
+  "homepage": "https://github.com/nitroxit/callcenterbot#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0",
+    "pug": "^3.0.2",
+    "webex-node-bot-framework": "^2.3.14"
+  },
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
+}
